@@ -4,6 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- centering -->
+    <div
+      class="bg-green-700 text-green-100 h-72 flex justify-center items-center"
+    >
+      <h2 class="text-4xl text-green-100">Centered!</h2>
+    </div>
+    <!-- Navigation -->
+    <div class="bg-gray-300 p-10 flex justify-between">
+      <div>logo</div>
+      <div>navigation</div>
+    </div>
+    <!-- Creation a columns section  -->
+    <div class="bg-yellow-500 p-10 md:flex md:space-x-4 space-y-4 md:space-y-0">
+      <div class="flex-shrink bg-white">hello</div>
+      <div class="flex-grow bg-white">hello</div>
+      <div class="flex-grow bg-white">hello</div>
+    </div>
+    <!-- Sidebar -->
+    <div class="bg-teal-700 h-64">
+      <div class="md:flex h-full items-stretch border border-red-700">
+        <div class="hidden md:block md:w-1/5 bg-orange-500 p-10">Sidebar</div>
+        <div class="md:flex-grow bg-teal-500 p-10">Content</div>
+      </div>
+    </div>
+  </body>
 </html>
